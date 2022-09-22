@@ -25,7 +25,7 @@ public class ProxyFactory {
                     @Override
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                         System.out.println("JDK代理开始");
-                        //反射机制调用目标对象
+                        //反射机制调用目标对象。
                         Object invoke = method.invoke(target, args);
                         return invoke;
                     }
